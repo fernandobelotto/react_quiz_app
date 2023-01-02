@@ -1,12 +1,10 @@
 import {
-  Box,
   Button,
-  Center,
-  Heading,
-  VStack,
-  Text,
   Container,
+  Heading,
   HStack,
+  Text,
+  VStack,
 } from "@chakra-ui/react";
 import { useNavigate } from "react-router-dom";
 import { useAppDispatch, useAppSelector } from "../store";

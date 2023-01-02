@@ -1,12 +1,10 @@
 import { Box, Button, Text, VStack } from "@chakra-ui/react";
 import { useState } from "react";
 import { useNavigate, useParams } from "react-router-dom";
-import { useAppDispatch, useAppSelector } from "../store";
+import { useAppSelector } from "../store";
 import { Answer } from "../types";
 
-type Props = {};
-
-function QuizQuestion({}: Props) {
+function QuizQuestion() {
   const params = useParams();
   const { questionId, quizId } = params;
 
@@ -15,8 +13,6 @@ function QuizQuestion({}: Props) {
     false: "red",
     idle: "gray",
   };
-
-  const dispatch = useAppDispatch();
 
   const quizzes = useAppSelector((state) => state.quizzes.quizzes);
 

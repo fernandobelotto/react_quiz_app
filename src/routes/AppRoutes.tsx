@@ -3,7 +3,7 @@ import { Layout } from "../components/Layout";
 import { Home } from "../pages/Home";
 import QuizPage from "../pages/QuizPage";
 import QuizQuestion from "../pages/QuizQuestion";
-import QuizResults from "../pages/QuizQuestion copy";
+import QuizResults from "../pages/QuizResults";
 
 export default function AppRoutes() {
   return (

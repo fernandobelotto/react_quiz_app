@@ -3,9 +3,7 @@ import { Outlet, useParams } from "react-router-dom";
 import { useAppSelector } from "../store";
 import { Quiz } from "../types";
 
-type Props = {};
-
-function QuizPage({}: Props) {
+function QuizPage() {
   const params = useParams();
 
   const quizId = params.quizId;

@@ -1,12 +1,7 @@
-import { Box, Button, Heading, HStack, Text, VStack } from "@chakra-ui/react";
-import { useState } from "react";
+import { Box, Button, Heading, HStack } from "@chakra-ui/react";
 import { useNavigate, useParams } from "react-router-dom";
-import { useAppDispatch, useAppSelector } from "../store";
-import { Answer } from "../types";
 
-type Props = {};
-
-function QuizResults({}: Props) {
+function QuizResults() {
   const params = useParams();
 
   const navigate = useNavigate();

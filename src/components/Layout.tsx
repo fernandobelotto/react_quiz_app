@@ -1,8 +1,6 @@
 import { Outlet } from "react-router-dom";
 
-type Props = {};
-
-export const Layout = (props: Props) => {
+export const Layout = () => {
   return (
     <div>
       <Outlet />
